@@ -21,7 +21,9 @@ Route::get('/tasks', function () {
      */ 
     $tasks = DB::table('tasks_new')->get();
 
-    // return $tasks;s
+    
+
+    // return $tasks;
     
     // here are 2 options how to include var in the view, with compact we can pass the whole array tasks and with key 'with' and spacify the param we want to add 
     return view('tasks.index', compact('tasks'))->with(['name'=>'Igor', 'age' => 32]);
