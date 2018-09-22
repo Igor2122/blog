@@ -7,8 +7,8 @@
    <title>Document</title>
 </head>
 <body>
-      <h3>{{ $task->title }}</h3>
-      <h1>{{$task->body}}</h1>
-   
+      <div>
+            <h1>{{$task->body}}</h1>
+      </div>
 </body>
 </html>

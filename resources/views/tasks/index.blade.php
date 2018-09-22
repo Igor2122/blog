@@ -21,17 +21,18 @@
 <body>
 {{-- <h1>Hello {{ $name }} you are {{$age}}</h1> --}}
 <ul>
-    @if ($tasks_new)    
-        @foreach ($tasks_new as $task)
-            <li>
-            <a href="/tasks/{{$task->id}}">
-                    <h1>
-                        Taks Name: {{ $task->title }}
-                    </h1>
-                </a>
-            </li>
-        @endforeach
-    @endif
+    
+        
+    @foreach ($tasks as $task)
+    <li>
+        <a href="/tasks/{{$task->id}}">
+            <h2>
+                Taks Name: {{ $task->body }}
+            </h2>
+        </a>
+    </li>
+    @endforeach
+    
 </ul>
 </body>
 </html>
