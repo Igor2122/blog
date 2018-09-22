@@ -9,7 +9,8 @@ Route::get('/tasks', 'TasksController@index');
 Route::get('/tasks/{task}', 'TasksController@show');
 
 
-
+Route::get('/books', 'BooksController@index');
+Route::get('/books/{number}', 'BooksController@show');
 
 
 Route::get('about', function() {

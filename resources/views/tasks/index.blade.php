@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tasks</title>
     <style>
       body {
         background: #3d3d3d; 
@@ -19,13 +19,13 @@
     </style>
 </head>
 <body>
-{{-- <h1>Hello {{ $name }} you are {{$age}}</h1> --}}
+
 <ul>
     
         
     @foreach ($tasks as $task)
     <li>
-        <a href="/tasks/{{$task->id}}">
+        <a href="tasks/{{$task->id}}">
             <h2>
                 Taks Name: {{ $task->body }}
             </h2>
