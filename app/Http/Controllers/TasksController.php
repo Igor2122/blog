@@ -18,7 +18,7 @@ class TasksController extends Controller
     // dd($tasks);
     
     
-    // here are 2 options how to include var in the view, with compact we can pass the whole array tasks and with key 'with' and spacify the param we want to add 
+    // tasks.index represents the path tasks(folder).index(file) 
     // , compact('tasks'))->with(['name'=>'Igor', 'age' => 32]);
     return view('tasks.index', compact('tasks'));
     }

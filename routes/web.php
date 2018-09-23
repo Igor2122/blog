@@ -1,5 +1,12 @@
 <?php
 
+Route::get('/', 'MoviesController@index'); 
+
+// controller => MoviesController - better to be plural
+// Eloquent model => Movie better to be singular
+// migration = create_movies_table
+
+
 
 
 // hrere at the Taskscontroller we refer to the controller that stores all our query methods that we defined
