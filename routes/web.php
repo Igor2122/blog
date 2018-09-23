@@ -6,6 +6,7 @@ Route::get('/', 'MoviesController@index');
 // Eloquent model => Movie better to be singular
 // migration = create_movies_table
 
+Route::get('/movies/{movie}', 'MoviesController@show');
 
 
 
