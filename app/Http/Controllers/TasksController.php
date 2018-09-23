@@ -14,8 +14,6 @@ class TasksController extends Controller
     */ 
     // $tasks = DB::table('tasks')->get();
     $tasks = Task::all();
-
-    // dd($tasks);
     
     
     // tasks.index represents the path tasks(folder).index(file) 

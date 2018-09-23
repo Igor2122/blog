@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>Name of the post</h1>
+    <h1>{{$movie->body}}</h1>
 @endsection
