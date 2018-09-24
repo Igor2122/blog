@@ -1,6 +1,6 @@
-@extends('layouts.base')
+@extends('layouts.master')
 
-@section('page')    
+@section('content')    
   <div class="container">
     <h1>All Books in Store</h1>
   </div>
