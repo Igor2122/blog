@@ -1,12 +1,19 @@
 <?php
 
-Route::get('/', 'MoviesController@index'); 
+
+// Blog Post:
+
+Route::get('/blog', 'BlogController@index');
+
+
+// Movies blog:
+Route::get('/movies', 'MoviesController@index'); 
+Route::get('movies/{movie}', 'MoviesController@show');
 
 // controller => MoviesController - better to be plural
 // Eloquent model => Movie better to be singular
 // migration = create_movies_table
 
-Route::get('/movies/{movie}', 'MoviesController@show');
 
 
 

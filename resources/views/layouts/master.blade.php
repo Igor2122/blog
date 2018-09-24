@@ -14,6 +14,8 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/album.css">
+    {{-- Blog stylesheet --}}
+    <link rel="stylesheet" href="/css/blog.css">
   </head>
 
   <body>
@@ -39,13 +41,16 @@
       </div>
       
 
-      @include('partials._nav');
+      @include('partials._nav')
 
     </header>
 
     <div class="container">
        @yield('content')
     </div>
+
+    {{-- lsyout without container --}}
+    @yield('content-no-container')
    
     @include('partials._footer')
  
