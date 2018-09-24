@@ -26,8 +26,8 @@
 
 @section('content-no-container')
 
-    <main role="main" class="col-md-8">
-        <div class="blog-main container">
+    <main role="main" >
+        <div class="blog-main">
           <h3 class="pb-3 mb-4 font-italic border-bottom">
             From the Firehose
           </h3>

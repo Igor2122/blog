@@ -51,9 +51,15 @@
 
     {{-- lsyout without container --}}
     <div class="row">
-      @yield('content-no-container')
+      <div class="col-md-8">
+        <div class="container">
+          @yield('content-no-container')
+        </div>
+      </div>
 
-      @include('partials._blog-side-bar')
+      <div class="col-md-4">
+        @include('partials._blog-side-bar')
+      </div>
     </div>
    
     @include('partials._footer')

@@ -1,10 +1,15 @@
 <?php
 
 
-// Blog Post:
-
+// Blog Post home:
 Route::get('/blog', 'BlogController@index');
 
+
+// Create new post 
+Route::get('blog/create', 'BlogController@create');
+
+//Blob Post show:
+Route::get('blog/{blog}', 'BlogController@show');
 
 // Movies blog:
 Route::get('/movies', 'MoviesController@index'); 

@@ -10,4 +10,14 @@ class BlogController extends Controller
     {
         return view('blog.index');
     }
+
+    public function show () 
+    {
+        return view('blog.show');
+    }
+
+    public function create ()
+    {
+        return view('blog.create');
+    }
 }
