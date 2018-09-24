@@ -50,10 +50,13 @@
     </div>
 
     {{-- lsyout without container --}}
-    @yield('content-no-container')
+    <div class="row">
+      @yield('content-no-container')
+
+      @include('partials._blog-side-bar')
+    </div>
    
     @include('partials._footer')
  
-
   </body>
 </html>
