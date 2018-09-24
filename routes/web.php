@@ -8,8 +8,15 @@ Route::get('/blog', 'BlogController@index');
 // Create new post 
 Route::get('blog/create', 'BlogController@create');
 
-//Blob Post show:
+//Blog show:
 Route::get('blog/{blog}', 'BlogController@show');
+
+// Blog post a post 
+Route::post('/blog', 'BlogController@store');
+
+
+
+
 
 // Movies blog:
 Route::get('/movies', 'MoviesController@index'); 

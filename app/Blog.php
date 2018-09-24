@@ -2,8 +2,8 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 
+// is extending our custom Model that is extanding the eloquent model 
 class Blog extends Model
 {
     //
