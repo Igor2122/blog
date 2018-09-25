@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="/css/album.css">
     {{-- Blog stylesheet --}}
     <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/adminPage.css">
+    <link rel="icon" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="//cdn.perfmatters.io/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -48,6 +51,9 @@
     <div class="container">
        @yield('content')
     </div>
+    <div>
+      @yield('no-container')
+    </div>
 
     {{-- lsyout without container --}}
     <div class="row">
@@ -58,7 +64,7 @@
       </div>
 
       <div class="col-md-4">
-        @include('partials._blog-side-bar')
+        
       </div>
     </div>
    

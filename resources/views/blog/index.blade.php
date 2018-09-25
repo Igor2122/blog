@@ -104,3 +104,8 @@
     </main><!-- /.container -->
    
 @endsection
+
+{{-- for some reason can't see the section to find out  --}}
+@section('sidebar')
+  @include('./partials._blog-side-bar')
+@endsection

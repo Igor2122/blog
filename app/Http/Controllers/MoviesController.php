@@ -18,4 +18,9 @@ class MoviesController extends Controller
     {
         return view ('movies.show', compact('movie'));
     }
+
+    public function admin () 
+    {
+        return view ('movies.admin');
+    }
 }

@@ -28,3 +28,7 @@
          <button type="submit" class="btn btn-primary">Publish</button>
        </form>
 @endsection
+
+@section('sidebar')
+  @include('partials._blog-side-bar')
+@endsection

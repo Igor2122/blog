@@ -22,6 +22,8 @@ Route::post('/blog', 'BlogController@store');
 Route::get('/movies', 'MoviesController@index'); 
 Route::get('movies/{movie}', 'MoviesController@show');
 
+Route::get('movies/{movie}', 'MoviesController@admin');
+
 // controller => MoviesController - better to be plural
 // Eloquent model => Movie better to be singular
 // migration = create_movies_table

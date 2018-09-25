@@ -31,14 +31,15 @@ class BlogController extends Controller
         //dd(request(['body', 'title'])); // dumps title only as form can come with many things we are not interested in 
         $post = new Blog;
 
-        // $post->title = request('title');
-        // $post->body = request('body');
-        // $post->image_url = request('image_url');
-        // save to DB 
-        // $post->save();
-        // And redirect to somewhere in our application ex to the list of posts
+        /* $post->title = request('title');
+           $post->body = request('body');
+           $post->image_url = request('image_url');
+           save to DB 
+           $post->save();
+        And redirect to somewhere in our application ex: to the list of posts
+        */
 
-        //Better war 
+        //Better way
         Blog::create([
             'title'=>request('title'),
             'body'=>request('body'),
