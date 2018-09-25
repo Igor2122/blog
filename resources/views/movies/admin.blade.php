@@ -19,7 +19,7 @@
              </a>
            </li>
            <li class="nav-item">
-           <a class="nav-link" href="{{ '/movies/add' }}">
+           <a class="nav-link" href="{{ '/movies/addMovie ' }}">
                <span data-feather="book-open"></span>
                Add Movie
              </a>

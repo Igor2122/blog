@@ -27,7 +27,7 @@ class MoviesController extends Controller
     public function showAllMovies () 
     {   
         $movieEdit = Movie::all();
-        return view ('movies.edit', compact('movieEdit'));
+        return view ('movies.showAllmovies', compact('movieEdit'));
     }
     
     public function addMovie () 
