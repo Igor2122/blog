@@ -47,15 +47,15 @@
 
     </header>
 
-    <div class="container">
+    <div class="container mt-5">
        @yield('content')
     </div>
-    <div>
+    <div class="mt-5">
       @yield('no-container')
     </div>
 
     {{-- lsyout without container --}}
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-md-8">
         <div class="container">
           @yield('content-no-container')
@@ -63,7 +63,7 @@
       </div>
 
       <div class="col-md-4">
-        
+        @yield('aside')
       </div>
     </div>
     
