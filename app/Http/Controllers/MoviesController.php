@@ -23,4 +23,15 @@ class MoviesController extends Controller
     {
         return view ('movies.admin');
     }
+    
+    public function showAllMovies () 
+    {   
+        $movieEdit = Movie::all();
+        return view ('movies.edit', compact('movieEdit'));
+    }
+    
+    public function addMovie () 
+    {   
+        return view ('movies.addMovie');
+    }
 }

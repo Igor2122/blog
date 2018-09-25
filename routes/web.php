@@ -20,9 +20,14 @@ Route::post('/blog', 'BlogController@store');
 
 // Movies blog:
 Route::get('/movies', 'MoviesController@index'); 
+Route::get('movies/admin', 'MoviesController@admin');
+Route::get('movies/showAllMovies', 'MoviesController@showAllMovies');
+Route::get('movies/addMovie', 'MoviesController@addMovie');
+
+
 Route::get('movies/{movie}', 'MoviesController@show');
 
-Route::get('movies/{movie}', 'MoviesController@admin');
+
 
 // controller => MoviesController - better to be plural
 // Eloquent model => Movie better to be singular
