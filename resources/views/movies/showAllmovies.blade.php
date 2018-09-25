@@ -7,7 +7,7 @@
 <div class="row">
 @foreach ($movieEdit as $movie)
        
-      <div class="col-md-6">
+      <div class="col-md-3">
       <div class="card mb-4 box-shadow">
          <div class="card-title">
          </div>

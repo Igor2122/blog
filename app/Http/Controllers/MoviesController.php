@@ -37,7 +37,6 @@ class MoviesController extends Controller
     
     public function store () 
     {   
-        $newMoviePost = new Movie;
 
         Movie::create([
             'title'=>request('title'),
