@@ -4,7 +4,7 @@
 
 
 @section('moviesSeciton')
-<form class="w-50 mx-auto mt-5" method="POST" action="/blog">
+<form class="w-50 mx-auto mt-5" method="POST" action="/movies">
 
    {{ csrf_field() }}
 
@@ -14,14 +14,15 @@
       </div>
 
       <div class="form-group">
-        <label for="exampleInputPassword1">Description</label>
-        <textarea name="body" class="form-control" id="body" cols="30" rows="10"></textarea>
+        <label for="image_url">Image URL:</label>
+        <textarea class="form-control" id="image_url" cols="1" rows="1" name="image_url"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="exampleInputPassword1">Image URL:</label>
-        <textarea name="image_url" class="form-control" id="image_url" cols="1" rows="1"></textarea>
+        <label for="exampleInputPassword1">Description</label>
+        <textarea class="form-control" id="body" cols="30" rows="10" name="body"></textarea>
       </div>
+
 
       <button type="submit" class="btn btn-primary">Publish</button>
 </form>

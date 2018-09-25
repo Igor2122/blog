@@ -29,9 +29,22 @@ class MoviesController extends Controller
         $movieEdit = Movie::all();
         return view ('movies.showAllmovies', compact('movieEdit'));
     }
-    
+
     public function addMovie () 
-    {   
+    {
         return view ('movies.addMovie');
+    }
+    
+    public function store () 
+    {   
+        $newMoviePost = new Movie;
+
+        Movie::create([
+            'title'=>request('title'),
+            'image_url'=>request('image_url'),
+            'body'=>request('body'),
+        ]);
+
+        return redirect('movies/showAllMovies');
     }
 }
