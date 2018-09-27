@@ -9,14 +9,15 @@ class BlogController extends Controller
 {
     public function index ()
     {
-        $post = Blog::all();
+        $posts = Blog::latest()->get();
 
-        return view('blog.index', compact('post'));
+
+        return view('blog.index', compact('posts'));
     }
 
-    public function show () 
+    public function show (Blog $post) 
     {
-        return view('blog.show');
+        return view('blog.show', compact('post'));
     }
 
     public function create ()
@@ -43,7 +44,7 @@ class BlogController extends Controller
         // VALIDATION: 
         $this->validate(request(), [
             'title' => 'required|min:2', // check the docs for the specific validations
-            'body' => 'required|max:50',
+            'body' => 'required|max:1200',
             'image_url' => 'required'
         ]);
 

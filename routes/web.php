@@ -9,7 +9,7 @@ Route::get('/blog', 'BlogController@index');
 Route::get('blog/create', 'BlogController@create');
 
 //Blog show:
-Route::get('blog/{blog}', 'BlogController@show');
+Route::get('blog/{post}', 'BlogController@show');
 
 // Blog post a post 
 Route::post('/blog', 'BlogController@store');
