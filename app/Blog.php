@@ -19,4 +19,9 @@ class Blog extends Model
             'post_id' => $this->id
         ]);
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
