@@ -14,7 +14,12 @@ Route::get('blog/{post}', 'BlogController@show');
 // Blog post a post 
 Route::post('/blog', 'BlogController@store');
 
-Route::post('/blog/{post}/comments', 'CommentsController@store');
+Route::post('/blog/{blog}/create', 'CommentsController@store');
+
+
+
+Route::get('/register', 'RegistrationsController@create');
+Route::get('/login', 'SessionsController@create');
 
 
 

@@ -13,13 +13,13 @@ class Blog extends Model
     }
 
     public function addComment($body)
-    {
+    {   
         Comment::create([
             'body' => $body,
             'post_id' => $this->id
-        ]);
-    }
-
+            ]);
+        }
+ 
     public function user()
     {
         return $this->belongsTo(User::class);

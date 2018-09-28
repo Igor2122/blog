@@ -6,6 +6,7 @@
 @section('moviesSeciton')
 <h2>Add New Movie</h2>
 <form class="w-50 mx-auto mt-5" method="POST" action="/movies">
+  
 
    {{ csrf_field() }}
 

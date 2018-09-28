@@ -2,7 +2,7 @@
 
 
 @section('content')
-   <div class="mt-5">
+   <div style="margin-top:150px;" >
       <h1>{{ $post->title }}</h1>
       <p>{{ $post->body }}</p>
       <img src="{{$post->image_url}}" alt="{{$post->title}}">
@@ -26,7 +26,7 @@
       {{-- add a comment --}}
       <div class="card">
           <div class="card-block">
-          <form action="POST" action="/blog/{{$post->id}}">
+          <form action="POST" action="/comments">
             {{ csrf_field() }}
                 <div class="form-group">
                     <textarea name="body" class="form-cotrol" cols="80" rows="5" placeholder="Your Commnet here"></textarea>
