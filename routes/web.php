@@ -14,6 +14,7 @@ Route::get('blog/{post}', 'BlogController@show');
 // Blog post a post 
 Route::post('/blog', 'BlogController@store');
 
+Route::post('/blog/{post}/comments', 'CommentsController@store');
 
 
 

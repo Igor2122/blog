@@ -22,6 +22,21 @@
              
          @endforeach
       </div>
+        <hr>
+      {{-- add a comment --}}
+      <div class="card">
+          <div class="card-block">
+          <form action="POST" action="/blog/{{$post->id}}">
+            {{ csrf_field() }}
+                <div class="form-group">
+                    <textarea name="body" class="form-cotrol" cols="80" rows="5" placeholder="Your Commnet here"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Add Comment</button>
+                </div>
+            </form>
+          </div>
+      </div>
    </div>
 @endsection
 
