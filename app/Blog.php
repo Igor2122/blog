@@ -15,8 +15,8 @@ class Blog extends Model
     public function addComment($body)
     {   
         Comment::create([
-            'body' => $body,
-            'post_id' => $this->id
+            'blog_id' => $this->id,
+            'body' => $body
             ]);
         }
  

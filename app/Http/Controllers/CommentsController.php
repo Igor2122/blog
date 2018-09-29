@@ -8,16 +8,20 @@ use App\Comment;
 class CommentsController extends Controller
 {
     // add store method
-    public function store(Blog $post) 
+    public function store(Blog $blog) 
     {
-        $post->addComment(request('body'));
-
-        // Comment::create([
-        //     'body'=> request('body'),
-        //     'post_id' => $post->id
-
-        // ]);
-
-        return back();
+        Comment::create([
+            'body'=> request('body'),
+            'blog_id' => $blog->id
+            ]);
+            
+            return back();
+        }
     }
-}
+    
+
+
+
+
+
+    // $blog->addComment(request('body'));

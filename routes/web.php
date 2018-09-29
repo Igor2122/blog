@@ -12,9 +12,9 @@ Route::get('blog/create', 'BlogController@create');
 Route::get('blog/{post}', 'BlogController@show');
 
 // Blog post a post 
-Route::post('/blog', 'BlogController@store');
+// Route::post('/blog', 'BlogController@store');
 
-Route::post('/blog/{blog}/create', 'CommentsController@store');
+Route::post('blog/{blog}/comments', 'CommentsController@store');
 
 
 
