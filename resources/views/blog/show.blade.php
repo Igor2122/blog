@@ -26,7 +26,7 @@
       {{-- add a comment --}}
       <div class="card">
           <div class="card-block">
-          <form method="POST" action="/blog/{blog}/comments">
+          <form method="POST" action="/blog/{(int)$blog}/comments">
             {{ csrf_field() }}
                 <div class="form-group">
                     <textarea name="body" class="form-cotrol" cols="80" rows="5" placeholder="Your Commnet here"></textarea>
