@@ -37,6 +37,11 @@ class MoviesController extends Controller
     
     public function store () 
     {   
+        // $this -> validate($request, [
+        //     'title' => 'required', 
+        //     'body' => 'requrired',
+        //     'image_url' => 'required',
+        // ]);
 
         Movie::create([
             'title'=>request('title'),
@@ -44,6 +49,6 @@ class MoviesController extends Controller
             'body'=>request('body'),
         ]);
 
-        return redirect('movies/showAllMovies');
+        return redirect('movies/showAllMovies')->with('success', 'Movie Added');
     }
 }

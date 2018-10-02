@@ -47,18 +47,20 @@
 
     </header>
 
-    <div class="container mt-5">
+    <div class="container">
        @yield('content')
-    </div>
-    <div class="mt-5">
+      </div>
+      <div>    
+      @include('partials._messages')
       @yield('no-container')
+      @yield('content-no-container')
     </div>
 
     {{-- lsyout without container --}}
-    <div class="row mt-5">
+    <div class="row">
       <div class="col-md-8">
         <div class="container">
-          @yield('content-no-container')
+          @include('partials._messages')
         </div>
       </div>
 
@@ -69,6 +71,10 @@
     
     @include('partials._scripts')
     @include('partials._footer')
- 
+    
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
   </body>
 </html>

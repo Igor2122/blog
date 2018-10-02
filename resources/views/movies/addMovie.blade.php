@@ -7,7 +7,8 @@
 <h2>Add New Movie</h2>
 
 
-{!! Form::open(['action' => 'MoviesController@store', 'method' => 'POST', 'class' => 'w-50 mx-auto mt-5']) !!}
+
+{!! Form::open(['action' => 'MoviesController@store', 'method' => 'POST', 'class' => 'w-75 mx-auto mt-5']) !!}
     
   {{-- <form class="w-50 mx-auto mt-5" method="POST" action="/movies"> --}}
     {{ csrf_field() }}
@@ -24,7 +25,7 @@
 
         <div class="form-group">
           <label for="exampleInputPassword1">Description</label>
-          <textarea class="form-control" id="body" cols="30" rows="10" name="body"></textarea>
+          <textarea class="form-control" id="article-ckeditor" cols="30" rows="10" name="body"></textarea>
         </div>
 
 

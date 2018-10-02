@@ -15,7 +15,7 @@
          <img class="card-img-top" src="{{$movie->image_url}}" alt="Card image cap">
          <h1>{{$movie->title}}</h1>
          <div class="card-body">
-         <p class="card-text">{{ $movie->body }}</p>
+         <p class="card-text">{!! $movie->body !!}</p>
             <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
                <a href="/movies/{{$movie->id}}"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
