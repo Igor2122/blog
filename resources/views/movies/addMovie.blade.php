@@ -1,12 +1,9 @@
 @extends('movies.admin')
 
-@section('moviesSeciton')
 
 
-@section('moviesSeciton')
+@section('addMovieSeciton')
 <h2>Add New Movie</h2>
-
-
 
 {!! Form::open(['action' => 'MoviesController@store', 'method' => 'POST', 'class' => 'w-75 mx-auto mt-5']) !!}
     
@@ -27,8 +24,7 @@
           <label for="exampleInputPassword1">Description</label>
           <textarea class="form-control" id="article-ckeditor" cols="30" rows="10" name="body"></textarea>
         </div>
-
-
+        
         <button type="submit" class="btn btn-primary">Publish</button>
   </form>
 {!! Form::close() !!}

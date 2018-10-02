@@ -29,6 +29,7 @@ Route::get('/movies', 'MoviesController@index');
 Route::get('movies/admin', 'MoviesController@admin');
 Route::get('movies/showAllMovies', 'MoviesController@showAllMovies');
 Route::get('movies/addMovie', 'MoviesController@addMovie');
+Route::get('movies/{movie}/editMovie', 'MoviesController@editMovie');
 
 Route::post('/movies', 'MoviesController@store');
 
