@@ -65,7 +65,7 @@ class MoviesController extends Controller
         return view('movies.editMovie')->with('movie', $movie);
     }
 
-    public function update (Request $request, $id)
+    public function edit (Request $request, $id)
     {
         $movie = Movie::find($id);
         $movie -> title = $request->input('title');

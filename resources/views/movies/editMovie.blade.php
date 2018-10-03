@@ -5,9 +5,9 @@
 <h2>Edit: <small> {{$movie->title}} </small></h2>
 
 
-   {!! Form::open(['action' => ['MoviesController@update', $movie->id], 'method' => 'POST', 'class' => 'w-75 mx-auto mt-5']) !!}
+   {{-- {!! Form::open(['action' => ['MoviesController@edit', $movie->id], 'method' => 'POST', 'class' => 'w-75 mx-auto mt-5']) !!} --}}
       
-   {{-- <form class="w-50 mx-auto mt-5" method="POST" action="/movies"> --}}
+   <form class="w-50 mx-auto mt-5" method="POST" action="/movies">
       {{ csrf_field() }}
 
          <div class="form-group">
@@ -28,5 +28,5 @@
          {{Form::hidden('_method', 'PUT')}}
          <button type="submit" class="btn btn-primary">Publish</button>
    </form>
-   {!! Form::close() !!}
+   {{-- {!! Form::close() !!} --}}
 @endsection
