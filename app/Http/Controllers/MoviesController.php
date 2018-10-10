@@ -71,6 +71,7 @@ class MoviesController extends Controller
         $movie -> title = $request->input('title');
         $movie -> image_url = $request->input('image_url');
         $movie -> body = $request->input('body');
+        $movie -> save();
         // Movie::create([
         //     'title'=>request('title'),
         //     'image_url'=>request('image_url'),
